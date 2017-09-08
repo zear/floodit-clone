@@ -57,7 +57,6 @@ char multiplayer_create_connection(s_SocketConnection *socketWrapper, const char
 }
 
 char _ping_server(s_SocketConnection *socketWrapper) {
-	printf("Creating packet\n");
 	// Allocate memory for the packet
 	UDPpacket* packet = SDLNet_AllocPacket(SIZE_PING_PACKET);
 	if (packet == 0) {
